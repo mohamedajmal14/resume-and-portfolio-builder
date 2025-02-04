@@ -1,0 +1,87 @@
+.navbar {
+  background-color: #121213;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  margin-left: 30px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin-left: 350px;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+  font-weight: 600;
+}
+
+.navbar-links a:hover {
+  color: #ff4b2b;
+}
+
+.navbar-cta {
+  display: flex; /* Use flex to align items horizontally */
+  align-items: center; /* Center align items vertically */
+}
+
+.navbar-cta .cta-button {
+  background-color: #ff4b2b;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+  margin-right: 20px; /* Adjust margin to reduce spacing */
+}
+
+.navbar-cta .cta-button:hover {
+  background-color: #fff;
+  color: #ff4b2b;
+  border: 1px solid #ff4b2b;
+}
+
+.profile-image {
+  width: 55px; /* Adjust size as needed */
+  height: 55px; /* Adjust size as needed */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* This will ensure the image covers the area properly */
+  margin-right: 10px; /* Space between profile image and logout button */
+}
+
+.logout-button {
+  background-color: transparent; /* Make the logout button background transparent */
+  color: white; /* Match text color with navbar */
+  margin-left: 10px; /* Space between profile icon and logout button */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0.5rem 1.2rem;
+  font-size: 1.3rem; /* Match font size with links */
+  border: none; /* Remove border for a clean look */
+  font-weight: bold;
+
+}
+
+/* Optional: Add hover effect to logout button */
+.logout-button:hover {
+  color: #ff4b2b; /* Change color on hover */
+}

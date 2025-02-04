@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+* {
+  box-sizing: border-box;
+}
+
+.ak {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/026/342/331/original/abstract-dynamic-circle-lines-lihgt-effect-background-free-vector.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 90.1vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

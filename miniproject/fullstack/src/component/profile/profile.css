@@ -1,0 +1,84 @@
+.profile-container {
+  max-width: 600px; /* Set a max width for the profile container */
+  margin: 20px auto; /* Center the container with margin */
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.profile-title {
+  font-size: 2em; /* Larger font size for the title */
+  color: #333; /* Dark color for the title */
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.profile-info {
+  display: flex; /* Align image and text horizontally */
+  justify-content: space-between; /* Push the profile details and image apart */
+  align-items: center; /* Vertically align items */
+  padding: 15px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column; /* Stack name and email vertically */
+  flex: 1; /* Take up remaining space */
+}
+
+.profile-name, .profile-email {
+  font-size: 1.2em; /* Slightly larger font for both name and email */
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.profile-image1-section {
+  position: relative;
+}
+
+.profile-image1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.edit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-image1-section:hover .edit-overlay {
+  opacity: 1;
+}
+
+.edit-button {
+  color: white;
+  background-color: #3498db;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.file-input {
+  display: none;
+}
+.profile-login-message {
+  font-size: 1em; /* Normal size for the login message */
+  color: #ff4b2b; /* Color for the login message (red) */
+  text-align: center; /* Center the message */
+  margin-top: 20px; /* Space above the message */
+}
